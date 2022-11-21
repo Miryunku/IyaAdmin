@@ -1,0 +1,27 @@
+﻿<Application x:Class="IyaAdmin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             xmlns:local="clr-namespace:IyaAdmin"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <sys:Double x:Key="fontSizeHeader">28</sys:Double>
+        <sys:Double x:Key="fontSizeNormal">18</sys:Double>
+
+        <!-- MarginSB = MarginBottomSmall -->
+        <Thickness x:Key="MarginTS">0,6,0,0</Thickness>
+        
+        <Thickness x:Key="MarginRS">0,0,6,0</Thickness>
+        
+        <Thickness x:Key="MarginBS">0,0,0,6</Thickness>
+        <Thickness x:Key="MarginBM">0,0,0,10</Thickness>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="5,3"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="3,3"/>
+        </Style>
+    </Application.Resources>
+</Application>

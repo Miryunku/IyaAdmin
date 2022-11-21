@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="IyaAdmin.UserControls.WordMeaningCapsule"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:IyaAdmin.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="Coral" BorderThickness="1" Padding="10">
+        <StackPanel>
+            <Label Content="Categoría gramatical"/>
+            <ComboBox x:Name="grammaticalCategories"
+                      SelectedIndex="0"
+                      HorizontalAlignment="Left"/>
+
+            <Label Content="Etiqueta"/>
+            <ComboBox x:Name="tags"
+                      SelectedIndex="0"
+                      HorizontalAlignment="Left"/>
+
+            <Label Content="Significado"/>
+            <TextBox x:Name="definition"/>
+
+            <Label Content="Oración de ejemplo"/>
+            <TextBox x:Name="exampleSentence"/>
+        </StackPanel>
+    </Border>
+</UserControl>

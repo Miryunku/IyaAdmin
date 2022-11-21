@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="IyaAdmin.UserControls.KanjiReadingCapsule"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IyaAdmin.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="700">
+    <Border BorderBrush="Coral" BorderThickness="1">
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="kanjiBox" MinWidth="50"/>
+            <Rectangle Fill="LightGreen" Width="4"/>
+            <TextBox x:Name="readingBox" MinWidth="100"/>
+        </StackPanel>
+    </Border>
+</UserControl>
